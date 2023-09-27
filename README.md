@@ -53,6 +53,18 @@ This includes:
 - Quicker application deployment
 - Business continuity
 
+- Scalability - scale with demand
+- Disaster recovery - recover quicker
+- Flexibility - Use how you need
+- Mobility - Not locked to the location of your datacentre
+- Cloud provider handles updates/security - a lot of responsibility is with the provider.
+- Better security - Large businesses can put more resources into security.
+- Cost vision/control - much easier to manage cost. But they must be managed properly.
+- Resource optimisation - use what you need
+- Global reach - can go global in seconds. Disaster redundancy.
+- Improved collaboration - teams can easily work on the same projects
+- Economies of scale - Bigger organisations can operate at larger scale and pass cost saving on to you/your business.
+
 ### Disadvantages:
 
 - Data loss or theft
@@ -60,6 +72,16 @@ This includes:
 - Insecure interfaces and APIs
 - Technology vulnerabilities in shared environments
 - Account hijacking
+- Cost spiralling - be careful (links to economies of scale)
+- Data privacy - your data is being stored on the internet. This isn't always ideal and you should evaluate if it is suitable for you. Also, certain aspects of responsibility will be on you, not just the cloud provider.
+- Data laws/GDPR - be careful when deploying
+- Requires internet - can cause issues
+- Limited control/customisation - cloud provider controls some/much of your infrastructure. Some services might not be available.
+- Hybrid cloud / multicloud hard to implement or manage.
+- Can be difficult to migrate - vendor lock in.
+- Downtime - tends to be low but you have no control.
+- Expertise needed - Experts needed to operate on cloud effectively.
+- Performance - resources are still limited.
 
 ## **What is OpEx vs CapEx?**
 
@@ -91,5 +113,11 @@ One way is to divide them up into different categories—the most common of whic
 - Collaboration
 - Automation
 - Monitoring
+<br>
+<br>
+- Ease of Use - Is it easy use?
+- Flexibility - Industry changes at a fast rate, so do not create systems that rely too heavily on one app, service etc.
+- Robustness - Uptime, can we get as close to 99.9% uptime as possible.
+- Cost - How can we be as cost effective as possible? While being efficient and forward thinking.
 
 ### **How do they link into the cloud?**

@@ -83,4 +83,11 @@
 5) Run the command on line 3 of the connecting instructions. e.g. `chmod 400 <privatekeyname.pem>`. This changes the permissions of the file. (chmod means change mode/permissions).
 6) Connect to your instance using its public DNS (copy the line in the example into GitBash but not the one from step 4 of the instructions)
 7) Begins `ssh -i`. -i means identity.
-8) Every time you need to log in you need to go to the instances page and find the command from Step 6 again.
+8) If you haven't connected before, you need to type `yes` once prompted. 
+9) Every time you need to log in you need to go to the instances page and find the command from Step 6 again.
+
+
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nginx -y
+sudo systemctl start nginx

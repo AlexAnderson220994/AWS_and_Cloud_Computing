@@ -1,3 +1,5 @@
+# Linux Commands, Processes and Permissions
+
 
 ## Commands
 
@@ -6,10 +8,13 @@
 - `mv <file_name> ..` - Moves the file back up to the previous folder
 - `mv <file_name_original> <file_name_new>` - Moves contents of file 1 to file 2
 
-## Making a shell
+## Making a script
 
 - `nano <shell_name.sh>`
 - `#!/bin/bash` - Called a shabang. Tells the system that this is a script
+- Add comments with # for each element of the script
+- Put the script command below the comment
+- Make sure the commands are in the correct sequence
 
 ## Processes
 

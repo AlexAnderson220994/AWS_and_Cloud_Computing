@@ -91,8 +91,9 @@ Source --- Anywhere IPv4 OR 0.0.0.0/0
 ````
 nano <script_name.sh>
 ````
+e.g.
 ````
-e.g. nano app_provision.sh
+nano app_provision.sh
 ````
 2) Add the script instructions in sequential order with comments:
 ````

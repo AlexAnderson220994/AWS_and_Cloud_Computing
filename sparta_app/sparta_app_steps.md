@@ -18,8 +18,9 @@
 ````
 scp -i "<filepath to .pem file>" -r <filepath to your local app folder> Ubuntu@<public IP>:<remote filepath>
 ````
+e.g.
 ````
-e.g. scp -i "C:/Users/Alex (Sparta)/.ssh/tech254.pem" -r app ubuntu@ec2-34-242-237-25.eu-west-1.compute.amazonaws.com:~
+scp -i "C:/Users/Alex (Sparta)/.ssh/tech254.pem" -r app ubuntu@ec2-34-242-237-25.eu-west-1.compute.amazonaws.com:~
 ````
 3) It is useful to already be located in the local app folder on GitBash so you only need to type the folder name and not the file path.
 4) Remember the `:~` at the end.

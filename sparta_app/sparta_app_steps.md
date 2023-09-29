@@ -59,6 +59,10 @@ sudo npm install pm2 -g
 npm install
 ````
 10) All packages are installed in order to run the app
+11) Run the app:
+````
+node app.js
+````
 
 ## Check security permissions
 
@@ -80,3 +84,62 @@ Source --- Anywhere IPv4 OR 0.0.0.0/0
 1) Copy the public IP address of your instance into the search engine search bar.
 2) Add `:3000` to the end so it connects to Port 3000 where your app is running.
 3) Hit refresh.
+
+## Making this into a script
+
+1) Type this into the command line:
+````
+nano <script_name.sh>
+````
+````
+e.g. nano app_provision.sh
+````
+2) Add the script instructions in sequential order with comments:
+````
+#!/bin/bash
+
+# clone app folder from GitHub
+git clone https://github.com/LSF970/sparta_test_app.git
+
+# move to folder
+cd sparta_test_app
+
+# move to folder
+cd app
+
+# get correct version of Nodejs
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+# install nodejs
+sudo apt install nodejs -y
+
+# install pm2
+sudo npm install pm2 -g
+
+# install node package manager
+npm install
+
+# launch app
+node app.js
+````
+3) Always make sure `#!/bin/bash` is on the top line.
+4) Make sure there are commands to navigate to the appropriate directory at the right moment.
+
+## Running the script
+
+1) Make sure the correct permissions have been given to the script so it can run. e.g.
+````
+chmod +x <script_name.sh>
+````
+2) If you're already in the directory the script is in, run:
+````
+./<script_name.sh>
+````
+3) If the script is in the home directory, run:
+````
+bash ~/<script_name.sh>
+````
+4) If the script is in another directory, run
+````
+bash ./file/path/<script_name.sh>
+````

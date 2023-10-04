@@ -77,7 +77,7 @@ sudo systemctl enable mongod
 1) Go back to the Gitbash terminal for the App instance.
 2) Create an environment variable using the following command;
 ````
-export DB_HOST=mongodb://<public_IP_of_DB_instance>27017/posts
+export DB_HOST=mongodb://<public_IP_of_DB_instance>:27017/posts
 ````
 3) Verify its worked using `printenv` or `printenv DB_HOST`.
 4) Navigate to the correct folder in the terminal where `app.js` is located.

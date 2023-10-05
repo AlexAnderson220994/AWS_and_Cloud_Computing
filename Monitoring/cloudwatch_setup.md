@@ -28,6 +28,8 @@
 13) Click `Create`.
 14) Click `Add to dashboard`.
 
+![Alt text](images/ss1.jpg)
+
 ### Notes
 
 - You can utilise the different elements of the dashboard better by maximising the view and changing elements of the view.
@@ -40,4 +42,30 @@
 2) In the Navigation pane on the left hand side of the console, click on `Alarms` then click on `All Alarms`.
 3) Click on `Create alarm`.
 4) Click on `Select Metric`.
-5) 
+5) In `All metrics`, choose `EC2 metrics`.
+6) Choose a category e.g. `Per-instance metrics`.
+7) Select the CPUUtilisation metric.
+8) Link to your EC2 instance.
+9) Under "Specify metric and conditions", for statistic choos "Average" and specify a percentile of your choice (1m, 5m etc...)
+10) Under "Conditions", specify:
+````
+Threshold Type = static
+
+CPUUtilisation is - Greater than - (Specify percentage)
+````
+11) Under Notification, choose In alarm and select an SNS topic to notify when the alarm is in ALARM state.
+- On the first occasion you will need to make an SNS topic and add your email address.
+12) Give your alarm a name and description. e.g.
+````
+tech254-alex-test-alarm
+````
+13) Go to "Preview and create"
+14) Click create alarm
+15) When the CPU goes over the specified limit, you will receive the following email:
+
+![Alt text](<images/ss2 - alarm notification.png>)
+
+**NOTE** - On the first occasion you will be sent an email to confirm your email address.
+
+16) DELETE your alarms when they are no longer needed.
+

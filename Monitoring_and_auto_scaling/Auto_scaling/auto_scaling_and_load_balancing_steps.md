@@ -35,8 +35,37 @@ tech254-alex-app-first-asg
 - Select `Application Load Balancer`.
 - Give the load balancer a name using normal naming conventions e.g. `tech254-alex-app-first-asg-lb`.
 - Change "Load balancer scheme" to `Internet-facing`.
-- 
+- Leave "Availability zones and subnets" alone.
+- Under "Listeners and routing", change the default routing to a new target group.
+- On the dropdown list, click `Create a target group`. Give this target group a name e.g. `tech254-alex-app-first-asg-lb-tg`.
+- Ignore VPC lattice.
+- Under "Health Checks", Turn on elastic load balancing (Recommended).
+- Click `Next`.
+7) **STEP 4 - Configure group size and scaling policies**
+- Under "Group size", input the following:
+````
+Desired capacity = 2
+Minimum capacity = 2
+Maximum capacity = 3
+````
+- Under "Scaling policies", turn on `Target tracking scaling policy` and make sure target value is `50`.
+- Ignore "Instance scale-in protection".
+- Click `Next`.
+8) **STEP 5 - Add notifications**
+- Ignore this step.
+9) **STEP 6 - Add tags**
+- Click on `Add tag`
+- Add the following:
+````
+Key = Name
+Value = tech254-alex-first-asg-HA-SC
+````
+- Click `Next`.
+10) **STEP 7 - Review**
+- Double check everything is as it should be.
+- Click `Create Auto Scaling group`.
 
-## Load Balancing steps
+**NOTE: Put the DNS name into the URL browser instead of the instance IP to open the page**
 
 ## Deletion
+

@@ -15,22 +15,22 @@
 
 ## Autoscaling steps
 
-1) Go to the EC2 console on AWS.
-2) On the left hand pane, scroll down to `Auto Scaling Groups` and click on it.
-3) Click on `Create Auto Scaling group`.
-4) STEP 1 - Choose launch template or configuration.
+**1) Go to the EC2 console on AWS.**
+**2) On the left hand pane, scroll down to `Auto Scaling Groups` and click on it.**
+**3) Click on `Create Auto Scaling group`.**
+**4) STEP 1 - Choose launch template or configuration.**
 - Name the autoscaling group using the proper naming conventions (use hyphens)
 ````
 tech254-alex-app-first-asg
 ````
 - Select the launch template you made earlier.
 - Click `Next`.
-5) STEP 2 - Choose instance launch options
+**5) STEP 2 - Choose instance launch options.**
 - Under "Network", keep VPC the same
 - Under "Network", add the 3 default subnets (DevOps student default (1a, 1b, 1c))
 - Leave Instance type requirements the same
 - Click `Next`.
-6) STEP 3 - Configure advanced options
+**6) STEP 3 - Configure advanced options.**
 - Under "Load balancing", select `Attach to a new load balancer`.
 - Select `Application Load Balancer`.
 - Give the load balancer a name using normal naming conventions e.g. `tech254-alex-app-first-asg-lb`.
